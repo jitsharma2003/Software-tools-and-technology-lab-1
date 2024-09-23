@@ -1,0 +1,113 @@
+﻿\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.5in}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{graphicx} % Include this package to handle images
+\usepackage{wrapfig}  % To wrap text around the image
+
+
+% Define custom colors
+\definecolor{sectioncolor}{RGB}{0,102,204} % Blue color for sections
+
+
+\setlist[itemize]{left=0pt, noitemsep, topsep=0pt} % No spacing between items
+\titleformat{\section}{\bfseries\large\color{sectioncolor}}{\thesection}{1em}{}
+
+
+% Custom command for colored section underline
+\newcommand{\sectionuline}[1]{
+    \vspace{6pt}
+    \color{sectioncolor}
+    \section{#1}
+    \vspace{-14pt}
+    \uline{\hspace{\textwidth}}
+    \vspace{4pt}
+    \color{black}
+}
+
+
+\newcommand{\header}{
+    \begin{minipage}[t]{0.75\textwidth}
+        \centering
+        {\LARGE \textbf{JIT SHARMA}} \\ \\
+        \href{mailto:arijit22112004@gmail.com}{jitsharma91233@gmail.com} | +91-9123304499 \\
+        \href{https://github.com/arijit22568}{https://github.com/jitsharma2003}
+    \end{minipage}%
+    \begin{minipage}[t]{0.2\textwidth}
+        \includegraphics[width=\textwidth]{} % Replace with your image filename
+    \end{minipage}
+}
+
+
+\begin{document}
+\pagenumbering{gobble}
+\header
+
+
+\sectionuline{Education}
+
+
+\noindent
+\textbf{} \hfill 2023 -- 2027 \\
+Maulana Abul Kalam Azad University Of Technology, Kalyani \\
+\textit{BCA }\\
+
+
+\noindent
+\textbf{Higher Secondary} \hfill 2021-2022\\
+Bandipur ideal academy, Khardaha\\
+\textit{Marks: 75.3\%}
+
+
+\sectionuline{Skills}\\
+\noindent
+\textbf{Programming Languages:} HTML,visual basics , C, Python \\
+\textbf{Web Development:} React, Bootstrap, jQuery \\
+\textbf{Tools:} Git, GitHub, VS Code, Postman, Overleaf \\
+
+
+\sectionuline{Experience}\\
+\noindent
+\textbf{Web Development Projects} \hfill 2021 -- 2024
+
+
+\begin{itemize}
+    \item Developed responsive websites using HTML, CSS, JavaScript.
+    \item Worked with peers on user-friendly interfaces.
+    \item Integrated RESTful APIs in projects.\\
+\end{itemize}
+\noindent
+
+
+\sectionuline{Projects}
+
+
+\noindent
+\textbf{LaTeX Lab Notebook} \hfill Aug 2024 
+
+
+\begin{itemize}
+    \item Created a lab notebook using LaTeX with indexing and custom formatting.\\
+\end{itemize}
+
+
+\noindent
+
+
+
+
+\sectionuline{Certifications}
+
+
+\noindent
+\textbf{Postman API Fundamentals Workshop} \hfill Aug 2024 \\
+Completed with a score of 28/28, earned the Postman Student Expert badge.
+
+
+
+
+\end{document}
